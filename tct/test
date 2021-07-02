@@ -1,0 +1,82 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="http://www.force-13.com/wp-content/uploads/2021/06/ATCF.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<body class="container" onload="init()">
+<header>
+<div class="row">
+<h1>Automated Tropical Cyclone File System (ATCF)</h1>
+<p>Tracking ongoing storms and disturbances</p>
+</div>
+<hr>
+</header>
+
+<section>
+<div>
+<div>
+<h2 style="color: red;">Global Tropical Cyclone and Disturbances Information</h2>
+</div>
+<hr>
+<div>
+<p>This page is updated every 15 minutes using data from the Automated Tropical Cyclone Forecast system (ATCF).</p>
+<p>**Graphical products are from <a href="https://www.tropicaltidbits.com">Tropical Tidbits</a> and <a
+href="https://www.weathernerds.org/">Weathernerds</a>.</p>
+</div>
+<hr id="topOfSelector">
+</div>
+
+<div>
+<!-- Storm navigator -->
+<div class="text-center">
+<p>Select a storm to view:</p>
+<select name="stormSelector" id="stormSelector" class="w-25" onchange="redirectToStorm()">
+<option value="stormSelector">Select a storm...</option>
+</select>
+</div>
+<!-- IF NO STORMS -->
+<div>
+<h2 class="text-center mt-5 mb-5" id="noStorms"></h2>
+</div>
+<!-- IF THERE ARE STORMS DISPLAY INDIVIDUALLY -->
+<div id="displayStorms"></div>
+<div class="text-center" style="color: red; font-size: xx-large;" id="loadingStorms"></div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Scroll To Top</button>
+</section>
+
+<footer>
+<hr>
+<p id="test"></p>
+<p>2021 Force Thirteen. All Rights Reserved.</p>
+</footer>
+</body>
+
+<script>
+mybutton = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { mybutton.style.display = "block"; }
+else { mybutton.style.display = "none"; }
+}
+function topFunction() {
+window.location.assign(window.location.pathname + "#topOfSelector")
+}
+</script>
+
+<style>
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+border: none;
+outline: none;
+background-color: red;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 10px;
+font-size: 14px;
+}
+</style>
