@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## KST Github Official
 
-You can use the [editor on GitHub](https://github.com/KhanKST/khankst.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<table style="margin:0 auto;width:0;">
+<tbody>
+<tr>
+	<td style="padding:15px 3px 3px!important;width:271px !important;">
+<div style="font-size:13px;border:1px solid #014400;background:#FFFFFF;border-radius:4px;padding:3px;text-align:center;width:450px;height:160px;margin-top:10px;">
 
-### Markdown
+<img style="width:90px;height:90px;border-radius:50px;border:2px solid white;margin-top:-25px;" src="https://khanstormtrackingofficial.files.wordpress.com/2021/06/kstlogo.png" />
+<div style="display:inline-block;text-align:center;line-height:19px;margin-top:-12px;">
+The Official Khan Storm Tracking Outlets
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<a href="https://www.youtube.com/c/KhanStormTrackingOfficial/">https://www.youtube.com/c/KhanStormTrackingOfficial/</a>
 
-```markdown
-Syntax highlighted code block
+<a href="https://www.facebook.com/KhanStormTrackingOfficial/">https://www.facebook.com/KhanStormTrackingOfficial/</a>
+	
+<a href="https://twitter.com/KhanTracking/">https://twitter.com/KhanTracking/</a>
+	
+	<a href="https://khanstormtrackingofficial.wordpress.com">https://khanstormtrackingofficial.wordpress.com/</a>
+</div>
+</div></td>
+<td style="padding:15px 3px 3px!important;width:271px !important;">
+<div style="font-size:13px;border:1px solid #000000;background:#ffffff;border-radius:4px;padding:3px;text-align:center;width:450px;height:160px;margin-top:10px;">
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KhanKST/khankst.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<img style="width:90px;height:90px;border-radius:50px;border:-25px solid white;margin-top:-15px;" src="https://khanstormtrackingofficial.files.wordpress.com/2021/06/kstchublogo.png" />
+<div style="display:inline-block;text-align:center;line-height:15px;margin-top:10px;">
+The KST Contributor Hub, Help The Team Grow!
+<a href="https://khanstormtrackingofficial.wordpress.com/help-our-team/">https://khanstormtrackingofficial.wordpress.com/help-our-team/</a>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
