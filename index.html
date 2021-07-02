@@ -22,22 +22,3 @@
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/843550/t/0"></script>
     </body>
 </html>
-<script type="text/javascript">
-function f1() {
-  if(document.all) { return false; }
-}
-function f2(e) {
-  if(document.layers || (document.getElementById &! document.all)) {
-    if(e.which==2 || e.which==3) { return false; }
-  }
-}
-if(document.layers) {
-  document.captureEvents(Event.MOUSEDOWN);
-  document.onmousedown = f1;
-}
-else {
-  document.onmouseup = f2;
-  document.oncontextmenu = f1;
-}
-document.oncontextmenu = new function("return false");
-</script>
