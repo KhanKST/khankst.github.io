@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8">
+    <title>streamclockutc</title>
+    <meta name="generator" content="Serif WebPlus X7">
+    <meta name="viewport" content="width=1919">
+    <meta http-equiv="Content-Language" content="en-gb">
+    <meta name="keywords" content="storm">
+    <meta name="description" content="The official KST site.">
+    <!--Page Head-->
+			<style>
+		body { background-color: #000000; }
+		.fontClass {
+			text-align: center;
+			color: #ffffff;
+			font-family: "Viga", Arial, "sans-serif";
+		}
+		#dDate {
+			/*font-weight: bold;*/
+			font-size: 20px;
+		}
+		#dTime {
+			/*font-weight: bold;*/
+			font-size: 30px;
+		}
+		#spacer {
+			height: 2px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>DateTime</title>
+	<script type="text/javascript">
+		var currentDate;
+		var dateString;
+		var timeString;
+		var longMonths = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+		function updateTime() {
+			currentDate = new Date();
+			dateString = longMonths[currentDate.getUTCMonth()] + " " + dPad(currentDate.getUTCDate()) + ", " + currentDate.getUTCFullYear();
+			timeString = dPad(currentDate.getUTCHours()) + ":" + dPad(currentDate.getUTCMinutes()) + ":" + dPad(currentDate.getUTCSeconds()) + " UTC";
+			document.getElementById('dDate').innerHTML = dateString;
+			document.getElementById('dTime').innerHTML = timeString;
+			var t = setTimeout(updateTime, 250);
+		}
+		function dPad(str) {
+			if(str<10) return "0" + str;
+			return str;
+		}
+	</script>
+    <link rel="stylesheet" type="text/css" href="wpscripts/wpstyles.css">
+  </head>
+  <body style="height:951px;background:#000000;">
+    <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1919px;height:951px;">
+      <img alt="" src="https://kstormtrackingfiles.files.wordpress.com/2021/07/template.gif" id="img_7942" style="position:absolute;left:0px;top:822px;width:428px;height:129px;">
+      <div id="frag_35" style="position:absolute;left:95px;top:879px;width:324px;height:67px;">
+        <body onLoad="updateTime()">
+	<div id="dDate" class="fontClass">.</div>
+	<div id="spacer"></div>
+	<div id="dTime" class="fontClass"></div>
+</body>
+      </div>
+      <img alt="KST LIVE" src="https://raw.githubusercontent.com/KhanKST/kststreaming.github.io/main/ksta20ap1.png" id="art_2952" style="position:absolute;left:90px;top:828px;width:258px;height:41px;">
+      <img alt="" src="https://kstormtrackingfiles.files.wordpress.com/2021/07/kstlogosmall.png" id="pic_3167" style="position:absolute;left:0px;top:873px;width:78px;height:78px;">
+    </div>
+  </body>
+</html>
