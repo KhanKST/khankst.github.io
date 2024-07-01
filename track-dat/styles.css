@@ -86,7 +86,7 @@ tbody tr:nth-child(odd) {
 .remarks-boarding-final-call {
     color: orange;
     font-weight: bold;
-    animation: flash 1s linear infinite;
+    animation: flash 5s linear infinite;
 }
 
 @keyframes flash {
