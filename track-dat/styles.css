@@ -9,11 +9,34 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #00bcd4;
     color: #fff;
     padding: 20px;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+h1 {
+    flex: 1;
+}
+
+.time-date {
+    text-align: right;
 }
 
 main {
@@ -41,7 +64,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #00bcd4;
     color: white;
 }
 
@@ -53,10 +76,22 @@ tbody tr:hover {
     background-color: #ddd;
 }
 
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+.flight-logo {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
