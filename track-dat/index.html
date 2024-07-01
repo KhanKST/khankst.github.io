@@ -2,23 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Information Display System</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-content">
+    <div class="container">
+        <div class="header">
             <img src="images/airport-logo.png" alt="Airport Logo" class="logo">
-            <h1>Domestic Departures</h1>
-            <div class="time-date">
-                <span id="time">08:55</span>
-                <span id="date">May 4, 2024</span>
+            <div class="header-text">
+                <h1>Domestic Departures</h1>
+                <div id="currentDateTime" class="date-time"></div>
             </div>
         </div>
-    </header>
-    <main>
-        <table id="flightTable">
+        <table>
             <thead>
                 <tr>
                     <th>STD</th>
@@ -29,15 +26,14 @@
                     <th>Remarks</th>
                 </tr>
             </thead>
-            <tbody id="flightData">
-                <!-- Flight data will be inserted here by JavaScript -->
+            <tbody id="flight-info">
+                <!-- Flight rows will be dynamically inserted here -->
             </tbody>
         </table>
-        <p class="footer-note">Boarding gate closes 15 minutes before departure.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Airport Authority</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="footer">
+            <p>Boarding gate closes 15 minutes before departure.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
