@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const flightData = [
-        { flight: 'AA123', destination: 'New York (JFK)', departure: '10:30 AM', status: 'On Time', gate: 'A1' },
+        { flight: 'AA123', destination: 'New York (JFK)', departure: '10:30 AM', status: 'Gate Change', gate: 'A2' },
         { flight: 'BA456', destination: 'London (LHR)', departure: '11:00 AM', status: 'Delayed', gate: 'B2' },
         { flight: 'DL789', destination: 'Los Angeles (LAX)', departure: '12:15 PM', status: 'Boarding', gate: 'C3' }
     ];
 
-    const statusOptions = ['On Time', 'Delayed', 'Boarding', 'Cancelled'];
+    const statusOptions = ['On Time', 'Delayed', 'Boarding', 'Gate Change', 'Cancelled'];
 
     function updateFlightStatus() {
         flightData.forEach(flight => {
