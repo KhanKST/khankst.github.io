@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const flightInfo = [
-        {std: '07:20', etd: '', airline: 'AirAsia', flight: 'Z2 716', destination: 'Manila (MNL)', gate: '2', remarks: ''},
-        {std: '08:20', etd: '', airline: 'AirAsia', flight: 'Z2 712', destination: 'Manila (MNL)', gate: '3', remarks: 'Gate Change'},
-        {std: '08:50', etd: '', airline: 'AirAsia', flight: 'Z2 922', destination: 'Clark (CRK)', gate: '4', remarks: ''},
-        {std: '08:50', etd: '', airline: 'Cebu Pacific', flight: '5J 892', destination: 'Manila (MNL)', gate: '9', remarks: ''},
-        {std: '09:40', etd: '10:20', airline: 'Philippine Airlines', flight: 'PR 2040', destination: 'Manila (MNL)', gate: '2', remarks: 'Delayed'},
-        {std: '09:50', etd: '', airline: 'Cebu Pacific', flight: '5J 920', destination: 'Manila (MNL)', gate: '7', remarks: ''},
-        {std: '10:05', etd: '', airline: 'Cebu Pacific', flight: '5J 1114', destination: 'Clark (CRK)', gate: '5', remarks: 'Cancelled'},
-        {std: '10:30', etd: '', airline: 'Cebu Pacific', flight: '5J 900', destination: 'Manila (MNL)', gate: '6', remarks: ''},
-        {std: '11:25', etd: '', airline: 'Philippine Airlines', flight: 'PR 2360', destination: 'Cebu (CEB)', gate: '1A', remarks: 'Boarding Final Call'},
-        {std: '11:50', etd: '', airline: 'AirAsia', flight: 'Z2 220', destination: 'Manila (MNL)', gate: '1B', remarks: ''},
-        {std: '12:15', etd: '', airline: 'Cebu Pacific', flight: '5J 898', destination: 'Manila (MNL)', gate: '3', remarks: ''},
+        {std: '07:20', etd: '', airline: 'airasia.png', flight: 'Z2 716', destination: 'Manila (MNL)', gate: '2', remarks: ''},
+        {std: '08:20', etd: '', airline: 'airasia.png', flight: 'Z2 712', destination: 'Manila (MNL)', gate: '3', remarks: 'Gate Change'},
+        {std: '08:50', etd: '', airline: 'airasia.png', flight: 'Z2 922', destination: 'Clark (CRK)', gate: '4', remarks: ''},
+        {std: '08:50', etd: '', airline: 'cebupacific.png', flight: '5J 892', destination: 'Manila (MNL)', gate: '9', remarks: ''},
+        {std: '09:40', etd: '10:20', airline: 'philippineairlines.png', flight: 'PR 2040', destination: 'Manila (MNL)', gate: '2', remarks: 'Delayed'},
+        {std: '09:50', etd: '', airline: 'cebupacific.png', flight: '5J 920', destination: 'Manila (MNL)', gate: '7', remarks: ''},
+        {std: '10:05', etd: '', airline: 'cebupacific.png', flight: '5J 1114', destination: 'Clark (CRK)', gate: '5', remarks: 'Cancelled'},
+        {std: '10:30', etd: '', airline: 'cebupacific.png', flight: '5J 900', destination: 'Manila (MNL)', gate: '6', remarks: ''},
+        {std: '11:25', etd: '', airline: 'philippineairlines.png', flight: 'PR 2360', destination: 'Cebu (CEB)', gate: '1A', remarks: 'Boarding Final Call'},
+        {std: '11:50', etd: '', airline: 'airasia.png', flight: 'Z2 220', destination: 'Manila (MNL)', gate: '1B', remarks: ''},
+        {std: '12:15', etd: '', airline: 'cebupacific.png', flight: '5J 898', destination: 'Manila (MNL)', gate: '3', remarks: ''},
     ];
 
     const flightInfoContainer = document.getElementById('flight-info');
@@ -20,7 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         Object.keys(flight).forEach(key => {
             const cell = document.createElement('td');
-            cell.textContent = flight[key];
+            if (key === 'airline') {
+                const img = document.createElement('img');
+                img.src = `images/${flight[key]}`;
+                img.alt = flight[key].split('.')[0];
+                img.classList.add('airline-logo');
+                cell.appendChild(img);
+            } else {
+                cell.textContent = flight[key];
+            }
             if (key === 'remarks') {
                 if (flight[key] === 'Delayed') {
                     cell.classList.add('remarks-delayed');
