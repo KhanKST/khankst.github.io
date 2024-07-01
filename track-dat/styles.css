@@ -58,6 +58,9 @@ th, td {
 th {
     background-color: #00ACC1;
     font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 tbody tr:nth-child(even) {
@@ -86,7 +89,7 @@ tbody tr:nth-child(odd) {
 .remarks-boarding-final-call {
     color: orange;
     font-weight: bold;
-    animation: flash 5s linear infinite;
+    animation: flash 1s linear infinite;
 }
 
 @keyframes flash {
@@ -94,7 +97,7 @@ tbody tr:nth-child(odd) {
         opacity: 1;
     }
     25%, 75% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -102,6 +105,11 @@ tbody tr:nth-child(odd) {
     background-color: #00ACC1;
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 1em;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.airline-logo {
+    width: 50px;
+    height: auto;
 }
