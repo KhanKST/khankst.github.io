@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const cell = document.createElement('td');
             if (key === 'airline') {
                 const img = document.createElement('img');
-                img.src = `images/${flight[key]}`;
+                img.src = `${flight[key]}`;
                 img.alt = flight[key].split('.')[0];
                 img.classList.add('airline-logo');
                 cell.appendChild(img);
