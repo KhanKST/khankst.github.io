@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const flightInfo = [
-        {std: '07:20', etd: '', airline: 'airasia.png', flight: 'Z2 716', destination: 'Manila (MNL)', gate: '2', remarks: ''},
+        {std: '07:20', etd: '8:30', airline: 'airasia.png', flight: 'Z2 716', destination: 'Manila (MNL)', gate: '2', remarks: 'Delayed'},
         {std: '08:20', etd: '', airline: 'airasia.png', flight: 'Z2 712', destination: 'Manila (MNL)', gate: '3', remarks: 'Gate Change'},
         {std: '08:50', etd: '', airline: 'airasia.png', flight: 'Z2 922', destination: 'Clark (CRK)', gate: '4', remarks: ''},
         {std: '08:50', etd: '', airline: 'cebupacific.png', flight: '5J 892', destination: 'Manila (MNL)', gate: '9', remarks: ''},
