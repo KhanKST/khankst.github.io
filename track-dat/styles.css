@@ -102,11 +102,11 @@ tbody tr:nth-child(odd) {
 }
 
 .footer {
-    background-color: #00ACC1;
+    background-color: #00949D;
     color: white;
     text-align: center;
     padding: 5px;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .airline-logo {
