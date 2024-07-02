@@ -35,6 +35,48 @@
             <p>Boarding gate closes 15 minutes before departure.</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      updateFlightTable(flights); // Initial population of the table
+      setInterval(updateFlightTable, 5000); // Update every 5 seconds
+    });
+
+    function updateFlightTable() {
+      const tableBody = document.getElementById('flight-table-body');
+      tableBody.innerHTML = ''; // Clear existing rows
+
+      flights.forEach(flight => {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+          <td>${flight.STD}</td>
+          <td>${flight.ETD}</td>
+          <td><img src="${flight.airlineLogo}" alt="${flight.airline}" style="height: 20px;"> ${flight.flightNumber}</td>
+          <td>${flight.destination}</td>
+          <td>${flight.gate}</td>
+          <td class="remarks ${flight.remarkClass}">${flight.remark}</td>
+        `;
+
+        tableBody.appendChild(row);
+      });
+
+      // Add empty rows if there are fewer than 11 flights
+      const emptyRowsCount = 11 - flights.length;
+      for (let i = 0; i < emptyRowsCount; i++) {
+        const emptyRow = document.createElement('tr');
+        emptyRow.innerHTML = `
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        `;
+        tableBody.appendChild(emptyRow);
+      }
+    }
+  </script>
 </body>
 </html>
